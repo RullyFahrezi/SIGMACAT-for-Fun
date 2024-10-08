@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+
+  margin: 0;
+  padding: 0;
+}
+
+.game-list {
+  display: flex; 
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  gap: 1.5rem; 
+  padding: 1rem; 
+}
+
+.game-list article {
+  flex: 0 0 auto; 
+  background-color: #ddd;
+  padding: 1rem; 
+  border-radius: 8px;
+  box-shadow: 0 6px 12px #26ff0033;
+  min-width: 200px; 
+  max-width: 200px;
+  text-align: center;
+}
+
+.game-list article img {
+  width: 100%; 
+  height: auto;
+  aspect-ratio: 2 / 3; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.game-list article h3 {
+  margin-top: 1rem; 
+  font-size: 1.2rem;
+  color: #333; 
+}
+
+.game-article {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.game-article h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.game-article li {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 12px; 
+  color: white; 
+  background-color: #2eae00; 
+  text-align: center; 
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0 10px 8px 5px #00000033;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  padding: 8px;
+  background-color: #00FF7F; 
+  text-align: center;
+  font-size: 20px;
+  color: #1f1f1f;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #00FF7F; 
+  font-weight: bold;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #2eae00;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    justify-content: center; 
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 10px; 
+    margin-right: 0; 
+  }
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+#content {
+  width: 80%;
+}
+
+
+
+
+@media screen and (max-width: 1275px) {
+  #content, aside {
+    width: 100%; 
+    padding: 0; 
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+  }
+
+}
+
+header {
+  display: inline; 
+}
+
+#switch {
+  cursor: pointer; 
+}
+
+.gallery {
+  display: flex; 
+  gap: 10px; 
+  overflow-x: auto;
+  padding: 10px; 
+}
+
+.gallery img {
+  height: 150px; 
+  width: auto; 
+  border-radius: 8px; 
+  object-fit: cover;
+}
+
+.aside-content {
+  justify-content: center; 
+  padding: 20px;
+}
+
+.profile-card {
+  background-color: #ffffff; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px #0000001a; 
+  padding: 20px;
+  max-width: 100%;
+  text-align: center; 
+  box-sizing: border-box; 
+
+  margin: 0 auto; 
+}
+
+.profile-card img {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  border: 4px solid #00FF7F;
+  margin-bottom: 20px; 
+  object-fit: cover; 
+}
+
+.profile-card h2 {
+  font-size: 24px;
+  color: #333; 
+  margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.bio-container-row {
+  display: flex;
+  justify-content: center; 
+  gap: 15px; 
+  margin-bottom: 20px;
+}
+
+.jobs {
+  font-size: 16px;
+  color: #00FF7F; 
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+.bio-container-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  text-align: left; 
+}
+
+.bio-container-col span {
+  font-weight: bold;
+  color: #333;
+}
+
+.bio-container-col p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.dark-main {
+  background-color: #1f1f1f; 
+  color: #ffffff; 
+}
+
+.dark-card {
+  box-shadow: 0 5px 3px 0 #5ad36a;
+}
+
+.dark-main .game-list article h3 {
+  color: #5ad36a; 
+}
+
+.dark-main .game-list article {
+  background-color: #414040; 
+}
+
+.dark-main article {
+  background-color: #2b2b2b; 
+}
+
+.dark-main h2, .dark-main h3 {
+  color: #5ad36a; 
+}
+
+.dark-main ul li {
+  color: #ffffff; 
+}
+
+.dark-main .bio-container-col span {
+  color: #5ad36a; 
+}
+
+.dark-main .bio-container-col p {
+  color: #ffffff; 
+}
+
+.dark-main .jumbotron {
+  background-color: #414040;
+  color: #5ad36a;
+}
